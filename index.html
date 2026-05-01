@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karina Lama - HTML Forms</title>
+    <link rel="stylesheet" href="KarinaLama_formstyles.css">
+</head>
+<body>
+    <header>
+        <img src="eculogo.png" alt="ECU Logo" class="logo">
+        <h1>Karina Lama</h1>
+        <p>About Me Page with HTML, CSS, and JavaScript Forms</p>
+    </header>
+
+    <nav>
+        <h2>Page Navigation</h2>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#forms">Interactive Forms</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="ecu_logo.png" alt="My Photo" class="profile-image">
+            <p><strong>My name is Karina Lama.</strong></p>
+            <p><em>My major is Computer Science.</em></p>
+            <p><u>I am a junior.</u></p>
+            <p>I enjoy learning new technologies and building applications that solve real-world problems.</p>
+        </section>
+
+        <section id="classes">
+            <h2>Classes</h2>
+            <div class="class-grid">
+                <div class="class-card">
+                    <h3>CPSMA-3103 - Algorithm Analysis</h3>
+                    <p>This class focuses on analyzing algorithm efficiency, time complexity, and problem-solving strategies used in computer science.</p>
+                </div>
+                <div class="class-card">
+                    <h3>MIS-1903 - Computer Business Applications</h3>
+                    <p>This course teaches practical software tools used in business environments, including productivity applications and workplace technology skills.</p>
+                </div>
+                <div class="class-card">
+                    <h3>CMPSC-3323 - Internet Programming</h3>
+                    <p>I am learning how to build web pages using HTML, CSS, JavaScript, layout design, and interactive website features.</p>
+                </div>
+                <div class="class-card">
+                    <h3>CMPSC-3253 - Introduction to Cloud Security</h3>
+                    <p>This course explores how to secure cloud systems, protect data, and understand security risks in modern computing environments.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="forms">
+            <h2>Interactive HTML Forms</h2>
+            <p>This section combines HTML forms, CSS grid styling, and JavaScript interactivity.</p>
+
+            <div class="forms-grid">
+                <div class="form-card">
+                    <h3>Basic Calculator</h3>
+                    <form id="calculatorForm">
+                        <label for="calcNum1">First Number:</label>
+                        <input type="number" id="calcNum1" placeholder="10" required>
+
+                        <label for="calcNum2">Second Number:</label>
+                        <input type="number" id="calcNum2" placeholder="5" required>
+
+                        <fieldset>
+                            <legend>Choose Operator</legend>
+                            <label><input type="radio" name="operator" value="add" required> Addition</label>
+                            <label><input type="radio" name="operator" value="subtract"> Subtraction</label>
+                            <label><input type="radio" name="operator" value="multiply"> Multiplication</label>
+                            <label><input type="radio" name="operator" value="divide"> Division</label>
+                        </fieldset>
+
+                        <button type="submit">Calculate</button>
+                    </form>
+                </div>
+
+                <div class="form-card">
+                    <h3>Factorial Calculator</h3>
+                    <form id="factorialForm">
+                        <label for="factorialNumber">Enter an Integer:</label>
+                        <input type="number" id="factorialNumber" min="0" step="1" placeholder="5" required>
+                        <button type="submit">Find Factorial</button>
+                    </form>
+                </div>
+
+                <div class="form-card">
+                    <h3>Fibonacci Finder</h3>
+                    <form id="fibonacciForm">
+                        <label for="fibonacciNumber">Enter Nth Fibonacci Number:</label>
+                        <input type="number" id="fibonacciNumber" min="0" step="1" placeholder="10" required>
+                        <button type="submit">Find Fibonacci</button>
+                    </form>
+                </div>
+
+                <div class="form-card">
+                    <h3>Maximum, Minimum, and Range</h3>
+                    <form id="rangeForm">
+                        <label for="rangeNum1">First Number:</label>
+                        <input type="number" id="rangeNum1" placeholder="12" required>
+
+                        <label for="rangeNum2">Second Number:</label>
+                        <input type="number" id="rangeNum2" placeholder="4" required>
+
+                        <label for="rangeNum3">Third Number:</label>
+                        <input type="number" id="rangeNum3" placeholder="20" required>
+
+                        <button type="submit">Calculate Range</button>
+                    </form>
+                </div>
+
+                <div class="form-card mailing-list">
+                    <h3>Mailing List Sign-Up</h3>
+                    <form id="mailingListForm">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" placeholder="John" required>
+
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" placeholder="Doe" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="John@AOL.com" required>
+
+                        <label for="zipCode">ZIP Code:</label>
+                        <input type="text" id="zipCode" placeholder="12345" required>
+
+                        <div class="button-row">
+                            <button type="submit">Submit Sign-Up</button>
+                            <button type="reset" class="reset-button">Reset Form</button>
+                        </div>
+                    </form>
+                    <div id="signupOutput" class="output-box">
+                        <h4>Submitted Sign-Ups</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Coding</li>
+                <li>Watching movies</li>
+                <li>Listening to music</li>
+            </ul>
+
+            <h3>Research Paper: Artificial Intelligence Overview</h3>
+            <iframe src="https://arxiv.org/pdf/1706.03762.pdf" title="Artificial Intelligence Research Paper"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="https://www.ecok.edu" target="_blank">ECU Homepage</a></p>
+    </footer>
+
+    <script src="KarinaLama_forms.js"></script>
+</body>
+</html>
